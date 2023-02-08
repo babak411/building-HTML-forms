@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <h1>HTML Forms!</h1>
+        <form action="/form-handling-url" method="post">
+            <fieldset>
+                <legend>Add user</legend>
+
+                <div>
+                    <label for="firstName">First name</label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
+
+                <div>
+                    <label for="lastName">Last name</label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+
+                <div>
+                    <label for="role">Status</label>
+                    <select id="role" name="user_role_name">
+                        <option value="student">Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="guest">Guest</option>
+                    </select>
+                </div>
+
+                  <div>
+                    <p>Choose your favorite programming language.</p>
+                    <input type="radio" id="html" name="drone" value="html" checked>
+                    <label for="html">HTML</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="css" name="drone" value="css">
+                    <label for="css">CSS</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="javaScript" name="drone" value="javaScript">
+                    <label for="javaScript">JavaScript</label>
+                  </div>
+
+                  <div>
+                    <label for="comments">Coments</label>
+                    <textarea id="comments" name="comments"></textarea>
+                  </div>
+
+                  <div>
+                    <label for="currentDate">Current Date</label>
+                    <input type="date" id="currentDate" name="cureentDate">
+                </div>
+
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Sign up for newsletter</label>
+                  </div>
+              
+                  <div>
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">Agree to terms and conditions</label>
+                  </div>
+
+                <div>
+                    <button type="submit">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
